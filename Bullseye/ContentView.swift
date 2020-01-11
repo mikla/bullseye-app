@@ -46,7 +46,7 @@ struct ContentView: View {
   }
   
   func pointsForCurrentRound() -> Int {
-    return 100 - abs(sliderValueRounded() - target)
+    return abs(sliderValueRounded() - target)
   }
   
   func sliderValueRounded() -> Int {
